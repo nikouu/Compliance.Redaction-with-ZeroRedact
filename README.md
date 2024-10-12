@@ -10,6 +10,14 @@ A sample project to see how to integrate Microsoft​.Extensions​.Compliance�
 # Example walkthrough
 
 This code is a rough example of how ZeroRedact can work with Microsoft.Extensions.Compliance.Redaction. It assumes you have the knowledge above and will skip over those topics.
+This example uses a fictional `Customer` object and redacts:
+1. ID
+2. Phone number
+3. Joining date
+4. Credit card
+5. Email
+
+![image](https://github.com/user-attachments/assets/1711c5bc-e202-4e2c-97ed-2c9dc72685b1)
 
 ## Logging configuration
 
