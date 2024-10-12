@@ -126,6 +126,7 @@ I'm sure there are safe ways to use things like ThreadLocals or some other stora
 - [The New Data Protection Features of .NET 8 (GDPR) by Nick Chapsas](https://www.youtube.com/watch?v=rK3-tO7K6i8)
 - [Enhancing Data Privacy with Microsoft.Extensions.Compliance.Redaction by Sharmila Subbiah](https://medium.com/@malarsharmila/enhancing-data-privacy-with-microsoft-extensions-compliance-redaction-c5190776a223)
 - [How to use Microsoft.Extensions.Compliance.Redaction package by Jose Perez Rodriguez](https://gist.github.com/joperezr/f5f022bcb4d0ce8f077e40e1f77239c8)
+- [LogRedactionDemo by bitbonk](https://github.com/bitbonk/LogRedactionDemo)
 - [How does Microsoft.Extensions.Compliance.Redaction work #4735](https://github.com/dotnet/extensions/discussions/4735)
 - [Microsoft.Extensions.Compliance.Redaction repo](https://github.com/dotnet/extensions/tree/main/src/Libraries/Microsoft.Extensions.Compliance.Redaction)
 - [LoggerRedactionOptions.ApplyDiscriminator Property](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.logging.loggerredactionoptions.applydiscriminator)
