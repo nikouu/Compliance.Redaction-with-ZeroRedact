@@ -83,7 +83,7 @@ Due to how [Microsoft.Extensions.Compliance.Redaction.Redactor](https://learn.mi
 - Date redaction: due to culture handling where "2022-05-01" may end up as "2022-05-1" with the padding removed
 - Using a fixed length redaction. This includes when an exception occurs when redacting and a fixed length redaction is returned
 
-These will result in extra `\u0000` characters in the string at the end.
+These will result in extra `\u0000`/`\0` characters in the string at the end.
 
 ## Calculating the final redaction length for when the redaction length is not the same as the original string length
 
