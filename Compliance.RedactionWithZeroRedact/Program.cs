@@ -34,13 +34,22 @@ builder.Logging.AddJsonConsole(option => option.JsonWriterOptions = new JsonWrit
     Encoder = System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping
 });
 
-builder.Services.AddSingleton<IRedactor>(redactor => new Redactor(new RedactorOptions
+builder.Services.AddZeroRedact(new RedactorOptions
 {
     CreditCardRedactorOptions = new CreditCardRedactorOptions { RedactorType = CreditCardRedaction.ShowLastFour },
     EmailAddressRedactorOptions = new EmailAddressRedactorOptions { RedactorType = EmailAddressRedaction.ShowFirstCharacters },
     DateRedactorOptions = new DateRedactorOptions { RedactorType = DateRedaction.Day },
     PhoneNumberRedactorOptions = new PhoneNumberRedactorOptions { RedactorType = PhoneNumberRedaction.ShowLastFour }
-}));
+});
+
+// or manually
+//builder.Services.AddSingleton<IRedactor>(redactor => new Redactor(new RedactorOptions
+//{
+//    CreditCardRedactorOptions = new CreditCardRedactorOptions { RedactorType = CreditCardRedaction.ShowLastFour },
+//    EmailAddressRedactorOptions = new EmailAddressRedactorOptions { RedactorType = EmailAddressRedaction.ShowFirstCharacters },
+//    DateRedactorOptions = new DateRedactorOptions { RedactorType = DateRedaction.Day },
+//    PhoneNumberRedactorOptions = new PhoneNumberRedactorOptions { RedactorType = PhoneNumberRedaction.ShowLastFour }
+//}));
 
 var app = builder.Build();
 
